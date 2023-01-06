@@ -1,0 +1,27 @@
+[1052344][      debug] Loading models took 60.937ms
+[1052344][environment] CWD = /home/huong/projects/VDCT/1v3/juliet_suite-c-cplus/testcases/CWE758_Undefined_Behavior
+[1052344][environment] No .inferconfig file found
+[1052344][environment] Project root = /home/huong/projects/VDCT/1v3/juliet_suite-c-cplus/testcases/CWE758_Undefined_Behavior
+[1052344][environment] INFER_ARGS =   @/tmp/args.tmp.011a74
+[1052344][environment] command line arguments:   infer -o
+[1052344][environment]                           tmpData/CCPP/infer/infer_CWE252_Unchecked_Return_Value
+[1052344][environment]                           run -j 1 -- make --directory=./*
+[1052344][environment] Available memory at startup: 25816 MB
+[1052344][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[1052344][environment] Scheduler: file
+[1052344][environment] Cores used: 1
+[1052344][environment] Infer version v1.1.0
+[1052344][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[1052344][environment] 
+[1052344][   progress] Capturing in make/cc mode...
+[1052344][environment] Running command make with env:
+[1052344][environment] (Extend((PATH /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin)(INFER_OLD_PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin)))
+[1052344][environment] 
+[1052344][ extern err] *** capture command failed:
+*** make --directory=./*
+*** exited with code 2
+
+[1052344][ extern err] Raised at Stdlib__scanf.bad_input in file "scanf.ml" (inlined), line 444, characters 18-40
+Called from Stdlib__scanf.scanf_bad_input in file "scanf.ml", line 1164, characters 4-75
+Called from IBase__Utils.get_available_memory_MB.scan_for_expected_output in file "src/base/Utils.ml", line 447, characters 10-86
+
